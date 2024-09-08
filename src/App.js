@@ -1,24 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
+import ComponenteBase from './components/useEffect/ComponenteBase';
+import ClenUpEffect from './components/useEffect/ClenUpEffect';
+
+import 'bootstrap/dist/css/bootstrap.css';
+import FetchData from './components/useEffect/FetchData';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <section className='container m-auto text-center'>
+
+        <ComponenteBase />
+        <ClenUpEffect />
+        <FetchData/>
+      </section>
+    </>
+
   );
 }
 
